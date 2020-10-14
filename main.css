@@ -1,0 +1,78 @@
+body{
+    font-family: 'Commissioner', sans-serif;
+}
+h1{
+    text-align: center;
+}
+h2{
+    color:#0074D9;
+}
+p{
+    text-align: left;
+}
+.form-grouptext{
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    width: 90%;
+    clear: both;
+}   
+.form-grouptext input {
+    width: 100%;
+    border-style: solid;
+    border-radius: 4px;
+    clear: both;
+    outline: none;
+  }
+  #dropdown{
+      font-size: 15px;
+      border-color: gray;
+      font-family: 'Commissioner', sans-serif;
+  }
+#title{
+    color:#0074D9;
+    font-size: 50px;
+    margin-top: 50px;
+}
+#description{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.infoText{
+    padding: 8px 0px;
+    width: 50%;
+}
+fieldset{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#comment{
+    font-size: 20px;
+    height: 25%;
+    width: 100%;
+}
+#submit{
+    opacity: .7;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 25px;
+    padding: 10px 100px 10px 100px;
+    background-color: #0074D9;
+    cursor: pointer;
+}
+#submit:hover{
+    opacity: 1;
+    transition: .8s;
+}
+@media (max-width: 650px){
+    .form-group{
+        width: 80%;
+    }
+}
+@media (max-width: 400px){
+    .form-group{
+        width: 70%;
+    }
+}

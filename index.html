@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main id="main">
+        <!--Header-->
+        <h1 id="title">Customer Service Survey</h1>
+        <p id="description">Let us know your thoughts on the company</p>
+        <!--Form-->
+        <form id="survey-form">
+            <!--Fieldset 1-->
+            <fieldset><legend><h2>Info</h2></legend>
+                <!--Text Fields-->
+        <div class="form-grouptext">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" name="name" id="name" class="infoText" placeholder="John Smith" required><br>
+        </div>
+        <div class="form-grouptext">
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" name="email" id="email" class="infoText" placeholder="xyz@email.com" required><br>
+        </div>
+        <div class="form-grouptext">
+            <label id="number-label" for="age">Age:</label>
+            <input type="number" placeholder="10" name="age" id="number" class="infoText" min="10" max="100"><br>
+        </div>
+    </fieldset>
+    <!--Fieldset 2-->
+<fieldset><legend><h2>Questions</h2></legend>
+    <div class="form-groupbutton">
+        <p>How was your experience with our company?</p>
+        <select name="experience" id="dropdown" required>
+            <option  value="verygood">Very good</option>
+            <option  value="good">Good</option>
+            <option  value="neutral">Neutral</option>
+            <option  value="bad">Bad</option>
+            <option  value="verybad">Very bad</option>
+        </select>
+    </div>
+    <!--Radio Buttons-->
+    <div class="form-groupbutton">
+        <p>What gender are you?</p>
+        <input type="radio" name="gender" class="input-radio" id="genderMale" value="male">
+        <label for="genderMale">Male</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="radio" name="gender" class="input-radio" id="genderFemale" value="female">
+        <label for="genderFemale">Female</label>
+    </div>
+    <!--Checkboxes-->
+    <p>What are some things you liked about the company?</p>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox1" name="like-checkbox1" value="like-answer1">
+        <label for="like-checkbox1">Team morale</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox2" name="like-checkbox2" value="like-answer2">
+        <label for="like-checkbox2">Service</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox3" name="like-checkbox3" value="like-answer3">
+        <label for="like-checkbox3">Company vision</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox4" name="like-checkbox4" value="like-answer4">
+        <label for="like-checkbox4">Store selection</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox5" name="like-checkbox5" value="like-answer5">
+        <label for="like-checkbox5">Store location</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox6" name="like-checkbox6" value="like-answer6">
+        <label for="like-checkbox6">Store Design</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox7" name="like-checkbox7" value="like-answer7">
+        <label for="like-checkbox7">Low wait time</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox8" name="like-checkbox8" value="like-answer8">
+        <label for="like-checkbox8">Community around the store</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox9" name="like-checkbox9" value="like-answer9">
+        <label for="like-checkbox9">Sale prices</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox10" name="like-checkbox10" value="like-answer10">
+        <label for="like-checkbox10">Reward system</label>
+    </div>
+    <!--Second Group of checkboxes-->
+    <p>What are some things you disliked about the company?</p>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="dislike-checkbox1" name="dislike-checkbox1" value="dislike-answer1">
+        <label for="dislike-checkbox1">Team morale</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="like-checkbox2" name="like-checkbox2" value="dislike-answer2">
+        <label for="dislike-checkbox2">Service</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="dislike-checkbox3" name="dislike-checkbox3" value="dislike-answer3">
+        <label for="dislike-checkbox3">Company vision</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="dislike-checkbox4" name="dislike-checkbox4" value="dislike-answer4">
+        <label for="dislike-checkbox4">Store selection</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="dislike-checkbox5" name="dislike-checkbox5" value="dislike-answer5">
+        <label for="dislike-checkbox5">Store location</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="dislike-checkbox6" name="dislike-checkbox6" value="dislike-answer6">
+        <label for="dislike-checkbox6">Store Design</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="dislike-checkbox7" name="dislike-checkbox7" value="dislike-answer7">
+        <label for="dislike-checkbox7">Low wait time</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="dislike-checkbox8" name="dislike-checkbox8" value="dislike-answer8">
+        <label for="dislike-checkbox8">Community around the store</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="dislike-checkbox9" name="dislike-checkbox9" value="dislike-answer9">
+        <label for="dislike-checkbox7">Sale prices</label>
+    </div>
+    <div class="form-groupbutton">
+        <input type="checkbox" id="dislike-checkbox10" name="dislike-checkbox10" value="dislike-answer10">
+        <label for="dislike-checkbox7">Reward system</label>
+    </div>
+</fieldset>
+    <!--Fieldset 3-->
+    <fieldset><legend><h2>Submit</h2></legend>
+    <div class="form-grouptext">
+        <p>Comments:</p>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-grouptext">
+        <input type="submit" id="submit" name="submit">
+    </div>
+    </fieldset>
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
